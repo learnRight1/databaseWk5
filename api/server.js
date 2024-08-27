@@ -7,6 +7,7 @@ const dotenv = require('dotenv');
 
 app.use(express.json());
 app.use(cors());
+app.use(express.urlencoded({ extended: true }));
 dotenv.config();
 
 // Connection to database
